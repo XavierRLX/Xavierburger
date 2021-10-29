@@ -7,6 +7,7 @@ padding: 0;
 }
 html, body{
     height: 100%;
+    width: 100%;
 }
 body{
     width: 100%;
@@ -21,7 +22,7 @@ header{
     background-color:  #D41331;
     padding: 20px;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
 }
 #ftlogo{
     display: inline;
@@ -69,12 +70,6 @@ header{
 #fthm2{
     position:absolute ;
 }
-footer{
-    text-align: center;
-    margin: 0;
-    padding: 5px;
-    background-color: #D41331;
-}
 #social > a{
     display: inline;
 }
@@ -82,6 +77,8 @@ footer{
     margin-top: 650px;
     display: flex;
     justify-content: center;
+    margin-bottom: 16px;
+    width: 100%;
 }
 #preto #branco :hover{
     background-color:#6B110F ;
@@ -104,4 +101,22 @@ footer{
 }
 .botao1:hover{
     background-color: #6B110F;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color: #D41331;
+    position:absolute;
+    bottom:0;
+    justify-content: center;
+    width: 100%;
+}
+footer > a {
+    text-decoration: none;
+    color: white;
+}
+footer > a:hover{
+    background-color: #6b110f8c;
+    padding: 3px;
+    border-radius: 5px;
 }
