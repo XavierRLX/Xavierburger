@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500&display=swap');
 *{
+font-family: spartan;
 margin: 0;
 padding: 0;
 }
 header{
-    background-color: #D41331;
+    background-color:#d41330 ;
     padding: 8px;
     display: flex;
     justify-content: space-around;
@@ -15,15 +16,62 @@ h1{
     display: inline;
 }
 #op{
+    margin: 10px;
  
 }
+#op > a {
+    text-decoration: none;
+    color: black;
+}
 #cadastro{
+    margin-top: 20px;
+}
+#cadastro > a {
+    text-decoration: none;
+    color: black;
 }
 main{
-    background-color: #6B110F;
+    background-color: #7e1311;
     text-align: center;
 }
-footer{
+#tfoto{
+    padding: 20px;
+}
+button{
+    display: inline-block;
     text-align: center;
-    
+    background-color: #D41331;
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+#pedir > a {
+    text-decoration: none;
+    color: black;
+}
+button:hover{
+    background-color: #d4d113;
+}
+#foto{
+    margin: 20px;
+    border-radius: 5px;
+}
+#tcardapio{
+    margin: 20px;
+}
+#cardapio{
+    border-radius: 5px;
+    margin: 20px;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+}
+p > a{
+    color: white;
+    margin: 5px;
+    text-decoration: none;
 }
