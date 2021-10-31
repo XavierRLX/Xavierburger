@@ -20,15 +20,29 @@ h1{
  
 }
 #op > a {
+    margin: 10px;
     text-decoration: none;
     color: black;
+}
+#op > a:hover
+{
+    background-color: #d4d113;
+    border-radius: 10px;
+    padding: 3px;
+
 }
 #cadastro{
     margin-top: 20px;
 }
 #cadastro > a {
+    margin: 10px;
     text-decoration: none;
     color: black;
+}
+#cadastro > a:hover{
+    background-color: #d4d113;
+    border-radius: 10px;
+    padding: 3px;
 }
 main{
     background-color: #7e1311;
