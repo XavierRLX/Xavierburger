@@ -2,12 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500&display=swap');
 *{
+    color: var(#ADA011);
+}
+*{
 font-family: spartan;
 margin: 0;
 padding: 0;
 }
+body{
+    background-color: #7A1600;
+}
 header{
-    background-color:#d41330 ;
+    background-color:#7A1600;
+    margin-left: 0;
     padding: 8px;
     display: flex;
     justify-content: space-around;
@@ -35,7 +42,7 @@ h1{
 
 }
 #cadastro{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #cadastro > a {
     margin: 10px;
@@ -48,19 +55,27 @@ h1{
     padding: 3px;
 }
 main{
-    background-color: #7e1311;
+    
     text-align: center;
 }
 #tfoto{
-    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color:#d4d113;
+    width: 65%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    
 }
 button{
     display: inline-block;
     text-align: center;
-    background-color: #D41331;
+    background-color:#ADA011;
     width: 50%;
-    margin: 10px;
-    padding: 5px;
+    margin: 15px;
+    padding: 15px;
     border-radius: 10px;
     border: none;
 }
@@ -71,17 +86,26 @@ button{
 button:hover{
     cursor: pointer;
     background-color: #d4d113;
+
 }
 #foto{
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 #tcardapio{
-    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color:#d4d113;
+    width: 65%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
 }
 #cardapio{
     border-radius: 5px;
     margin: 20px;
+    
 }
 footer{
     padding: 10px;
