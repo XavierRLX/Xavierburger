@@ -112,7 +112,7 @@ button:hover{
     border-radius: 2px;
     margin: 20px;
 }
-#mapa{
+/* #mapa{
     margin: 15px 20px 15px 20px;
     overflow:hidden;
     padding-bottom:56.25%;
@@ -126,7 +126,7 @@ button:hover{
     height:100%;
     width:100%;
     position:absolute;
-}
+} */
 footer{
     padding: 10px;
     text-align: center;
