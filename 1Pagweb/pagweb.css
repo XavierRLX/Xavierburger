@@ -89,6 +89,18 @@ main{
     border: none;
     
 }
+div.videos{ 
+    padding: 0px;
+    position: relative;
+    padding-bottom: 55%;
+}
+    div.videos > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    }
 button{
     display: inline-block;
     text-align: center;
