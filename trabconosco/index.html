@@ -9,43 +9,58 @@
 </head>
 <body>
   <header>
-    <h1><a href="../1Pagweb/index.html">XAVIER</a></h1>
+    <div id="logo"> <img width="46px" id="ftlogo" src="hamburguer.png" alt="ftham">
+      <a href="../1Pagweb/index.html">
+          <h1>RLX Burger</h1>
+      </a>
   </header>
-        <form>
-            <fieldset id="usuario">
-
-                <legend>Identificação do Usuário</legend>
-                  <p><label for="cnome">Nome:</label> <input type="text" nome="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome Completo...">
-                </p>
-                  <p><label for="csenha">Senha:</label><input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 Dígitos..."></p>
-
-                  <p><label for="cmail">E-mail</label><input type="email" name="tmail" id="cmail" size="20" maxlength="30"></p>
-                  <fieldset id="sexo">
-
+          <form method="post" id="fcontato" action="mailto:renanlima2000.aer@gmail.com">
+            <h2>Trabalhe Conosco</h2>
+              <fieldset id="usuario">
+                  <legend>Identificação do Usuário</legend>
+                    <p><label for="cnome">Nome:</label> <input type="text" nome="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome Completo...">
+                  </p>
+                    <p><label for="csenha">Senha:</label><input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 Dígitos..."></p>
+                    <p><label for="cmail">E-mail</label><input type="email" name="tmail" id="cmail" size="20" maxlength="30" placeholder="exemplo@dominio.com.br"></p>
+                    <fieldset id="sexo">
                       <legend>Sexo: </legend>
-
-                            <input type="radio" name="tsexo" id="cmasc"><label for="cmasc">Masculino</label> <br>
-                            <input type="radio" name="tsexo" id="cfem"><label for="cfem">Feminino</label>
-
-                  </fieldset>
-                  <p>Data de nascimento: <input type="date" nome="tdate" id="cdate"></p>
-            </fieldset>
-            
-            <fieldset id="endereco">
-                <legend>Endereço do Usuário</legend>
-                  <p><label for="crua">Logadouro:</label> <input type="text" name="trua" id="crua" size="30" maxlength="80" placeholder="Rua, Av,Trav..."></p>
-
-                  <p><label for="cnum">Número: </label><input type="number" name="tnum" id="cnum" min="0" max="99999" size="5" maxlength="5"></p>
-
-                  Estado:
-                  Cidade:
-            </fieldset>
-            
-            <fieldset id="formacao">
-                Formação
-                  Escolaridade:
-                  Curso:
-            </fieldset>
-        </form>
+                      <input type="radio" name="tsexo" id="cmasc"><label for="cmasc">Masculino</label> <br>
+                      <input type="radio" name="tsexo" id="cfem"><label for="cfem">Feminino</label>
+                    </fieldset>
+                    <p>Data de nascimento: <input type="date" nome="tdate" id="cdate"></p>
+              </fieldset>
+          
+              <fieldset id="endereco">
+                  <legend>Endereço do Usuário</legend>
+                    <p><label for="crua">Logadouro:</label> <input type="text" name="trua" id="crua" size="30" maxlength="80" placeholder="Rua, Av,Trav..."></p>
+                    <p><label for="cnum">Número: </label><input type="number" name="tnum" id="cnum" min="0" max="99999" size="5" maxlength="5"></p>
+                    <p><label for="ccid">Cidade:</label> <input type="text" name="tcid" id="ccid"></p>
+                    <p><label for="cest">Região RJ </label>
+                    <select name="test" id="cest">
+                      <option value="zn" selected>Zona Norte</option>
+                      <option value="zo">Zona Oeste</option>
+                      <option value="zs">Zona Sul</option>
+                      <option value="bx">Baixada</option>
+                      <option value="out">Outro: <input type="text" placeholder="Se sua opção for 'Outro' "></option>
+                    </select></p>
+                    <p><label for="ccid">Bairro: </label> <input type="text" name="tcid" id="ccid"></p>
+              </fieldset>
+          
+              <fieldset id="formacao">
+                  <legend>Formação</legend>
+                    <p><label for="cform">Escolaridade:</label>
+                      <select name="tform" id="cform">
+                        <option value="es">Ensino Fundamental I Completo</option>
+                        <option value="ef">Ensino Fundamental II Completo</option>
+                        <option value="em">Ensino Médio Completo</option>
+                        <option value="es">Ensino Superior Cursando</option>
+                        <option value="es">Ensino Superior Completo</option>
+                      </select></p>
+                    <p><label for="ccurso">Curso:</label><input type="text" name="tcurso" id="ccurso"></p>
+              </fieldset>
+              <div id="botao1">
+                <button id="botao" type="submit" onsubmit="">Enviar</button>
+            </div>
+          </form>
 </body>
 </html>

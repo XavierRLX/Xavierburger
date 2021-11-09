@@ -87,9 +87,9 @@ main{
     padding: 5px;
     border-radius: 2px;
     border: none;
-    
 }
 div.videos{ 
+    background-color: black;
     padding: 0px;
     position: relative;
     padding-bottom: 55%;
@@ -100,7 +100,18 @@ div.videos{
     left: 5%;
     width: 90%;
     height: 90%;
-    }
+}
+#tvideo{
+    display: inline-block;
+    text-align: center;
+    background-color:#ba172a;
+    width: 95%;
+    margin: 0px 0px 10px 0px;
+    box-shadow: 0px 0px 45px;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+}
 button{
     display: inline-block;
     text-align: center;
@@ -124,17 +135,34 @@ button:hover{
     margin: 20px;
     border-radius: 2px;
 }
-#tcardapio{
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 2px;
-    border: none;
+article{
+    border-style: solid;
+    border-width: 2px;
+    margin: 10px 5px 10px 5px;
 }
-#cardapio{
-    border-radius: 2px;
-    margin: 20px;
+#tcardapio{
+    padding: 10px;
+}
+.relaxas{
+    display: inline-block;
+    max-width: 350px;
+    height: 150px;
+    color: #ba172a;
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.titulocardap{
+    margin: 10px 0px 0px 0px;
+}
+.rlxdescri{
+    padding: 10px;
+    color: white;
+}
+#tfincard{
+    padding: 10px;
+    margin: 10px;
 }
 /* #mapa{
     margin: 15px 20px 15px 20px;

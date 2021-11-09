@@ -1,10 +1,93 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 body{
-    background-color: #D41331;;
+    background-color: #57423F;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+}
+header{
+    background-color: #ba172a;
+    margin: 0px 0px 50px 0px;
+    box-shadow: 0px 0px 45px black;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#ftlogo{
+    margin-right: -34px;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.4em;
+    color: black;
+    display: inline;
+    margin-left:0px;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: #ba172a;
+    color: black;
+    margin : 30px;
+    border-radius: 3px;
+}
+h2{
+    padding: 5px;
+    text-align: center;
+}
+input{
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 5px;
+}
+#fcontato{
+    background-color: #99746E;
+    font-family: 'Spartan', sans-serif;
+    color: black;
+    margin: auto;
+    border-radius: 2px;
+    height: 780px;
+    max-width: 600px;
+    min-width: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.685); 
+}
+legend{
+    padding: 5px;
+}
+fieldset{
+    margin: 15px 0px 15px 0px;
+    border-style: none;
+    border-color: black;
+}
+p{
+    margin: 3px;
+}
+#botao1{
+    margin: 10px;
+    padding: 20px;
+}
+#botao{
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    border-radius:5px;
+    width: 50%;
+    border: none;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    background-color: #ba172a;
+}
+#botao:hover{
+    background-color: #6B110F;
+    cursor: pointer;
+    transition: 0.3s;
 }
