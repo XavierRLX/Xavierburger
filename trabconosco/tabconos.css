@@ -50,14 +50,13 @@ input{
     margin: 5px;
 }
 #fcontato{
-    background-color: #99746E;
+    background-color: #ba172a;
     font-family: 'Spartan', sans-serif;
     color: black;
     margin: auto;
     border-radius: 2px;
-    height: 780px;
-    max-width: 600px;
-    min-width: 200px;
+    height: 835px;
+    max-width: 300px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.685); 
 }
 legend{
@@ -84,10 +83,20 @@ p{
     border: none;
     font-family: 'Spartan', sans-serif;
     font-weight: 500;
-    background-color: #ba172a;
+    background-color: #bab717;
 }
 #botao:hover{
     background-color: #6B110F;
     cursor: pointer;
     transition: 0.3s;
+}
+legend, label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (min-width: 800px){
+    #fcontato{
+         max-width: 600px;
+        
+    };
+
 }

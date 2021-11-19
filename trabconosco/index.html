@@ -18,7 +18,7 @@
           <form method="post" id="fcontato" action="mailto:renanlima2000.aer@gmail.com">
             <h2>Trabalhe Conosco</h2>
               <fieldset id="usuario">
-                  <legend>Identificação do Usuário</legend>
+                  <legend>Identificação do Usuário:</legend>
                     <p><label for="cnome">Nome:</label> <input type="text" nome="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome Completo...">
                   </p>
                     <p><label for="csenha">Senha:</label><input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 Dígitos..."></p>
@@ -32,10 +32,10 @@
               </fieldset>
           
               <fieldset id="endereco">
-                  <legend>Endereço do Usuário</legend>
+                  <legend>Endereço do Usuário:</legend>
                     <p><label for="crua">Logadouro:</label> <input type="text" name="trua" id="crua" size="30" maxlength="80" placeholder="Rua, Av,Trav..."></p>
-                    <p><label for="cnum">Número: </label><input type="number" name="tnum" id="cnum" min="0" max="99999" size="5" maxlength="5"></p>
-                    <p><label for="ccid">Cidade:</label> <input type="text" name="tcid" id="ccid"></p>
+                    <p><label for="cnum">Número: </label><input type="number" name="tnum" id="cnum" min="0" max="99999" size="5" maxlength="5" placeholder="Ex: 10..."></p>
+                    <p><label for="ccid">Cidade:</label> <input type="text" name="tcid" id="ccid"placeholder="Rio de Janeiro, Duque de Caxias..."></p>
                     <p><label for="cest">Região RJ </label>
                     <select name="test" id="cest">
                       <option value="zn" selected>Zona Norte</option>
@@ -44,11 +44,11 @@
                       <option value="bx">Baixada</option>
                       <option value="out">Outro: <input type="text" placeholder="Se sua opção for 'Outro' "></option>
                     </select></p>
-                    <p><label for="ccid">Bairro: </label> <input type="text" name="tcid" id="ccid"></p>
+                    <p><label for="ccid">Bairro: </label> <input type="text" name="tcid" id="ccid"placeholder="Ex: Guadalupe, Madureira..."></p>
               </fieldset>
           
               <fieldset id="formacao">
-                  <legend>Formação</legend>
+                  <legend>Formação:</legend>
                     <p><label for="cform">Escolaridade:</label>
                       <select name="tform" id="cform">
                         <option value="es">Ensino Fundamental I Completo</option>
@@ -57,7 +57,7 @@
                         <option value="es">Ensino Superior Cursando</option>
                         <option value="es">Ensino Superior Completo</option>
                       </select></p>
-                    <p><label for="ccurso">Curso:</label><input type="text" name="tcurso" id="ccurso"></p>
+                    <p><label for="ccurso">Curso:</label><input type="text" name="tcurso" placeholder="Tecnico ou Faculdade..." id="ccurso"></p>
               </fieldset>
               <div id="botao1">
                 <button id="botao" type="submit" onsubmit="">Enviar</button>
