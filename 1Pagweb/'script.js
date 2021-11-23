@@ -7,9 +7,11 @@ function carregar(){
         aqui.style.background = 'black'
         aqui.style.color = 'white'
         aqui.style.fontSize = '0.7em'
+        aqui.style.width = '70px'
     } else {
         aqui.innerHTML = 'aberto'
         aqui.style.background = '#19d413'
+        aqui.style.width = '70px'
 
     }
     }
