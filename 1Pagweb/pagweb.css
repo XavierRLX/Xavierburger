@@ -9,6 +9,19 @@ font-family: spartan ;
 margin: 0;
 padding: 0;
 }
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #57423F;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #ba172a;;    /* color of the scroll thumb */
+    border-radius: 0px;       /* roundness of the scroll thumb */
+    border: 0px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+  }
 body{
     background-color: #57423F;
 }
