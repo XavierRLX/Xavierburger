@@ -10,42 +10,49 @@ margin: 0;
 padding: 0;
 }
 body::-webkit-scrollbar {
-    width: 10px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #57423F;        /* color of the tracking area */
-  }
-  
+    width: 10px; 
+}
+body::-webkit-scrollbar-track {
+    background: #57423F;
+}
   body::-webkit-scrollbar-thumb {
-    background-color: #ba172a;;    /* color of the scroll thumb */
-    border-radius: 0px;       /* roundness of the scroll thumb */
-    border: 0px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
-  }
+    background-color: #ba172a;
+    border-radius: 0px; 
+    border: 0px solid rgb(0, 0, 0);
+
+}
 body{
     background-color: #57423F;
 }
+
 header{
     background-color: #ba172a;
     margin: 0px 0px 0px 0px;
-    box-shadow: 0px 0px 45px;
+    padding: 0px 2px 0px 10px ;
+    box-shadow: 0px 0px 20px;
     display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
+#logop{
+    margin: 0px;
+    padding: 0px;
+}
+#ftlogo{
+    width: 30px;
 }
 #logo:hover{
     cursor:default;
 }
 #eaqui{
+    cursor: default;
     background-color: #ba172a;
-    padding: 5px;
+    padding: 0px 0px 2px 0px;
 }
 #aqui{
     background-color: #19d413;
     width: 95px;
-    padding: 2px;
+    padding: 1px;
     border-radius: 2px;
     text-align: center;
     font-size: 0.8em;
@@ -64,7 +71,7 @@ header{
 }
 h1{
     font-family: 'Bebas Neue', cursive;
-    font-size: 4em;
+    font-size: 2.5em;
     display: inline;
 }
 #op{
@@ -75,6 +82,7 @@ h1{
     margin: 10px;
     text-decoration: none;
     color: black;
+    display: none;
 }
 #op > a:hover
 {
@@ -84,6 +92,7 @@ h1{
 }
 #cadastro{
     margin-top: 10px;
+    display: none;
 }
 #cadastro > a {
     margin: 10px;
@@ -117,7 +126,7 @@ div.videos{
     position: relative;
     padding-bottom: 55%;
 }
-    div.videos > iframe {
+    div.videos > video {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -168,38 +177,59 @@ article{
     font-size: 1em;
     padding: 10px;
 }
+#cxcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.descpreco{
+    display: flex;
+    margin-top: 20px;
+}
 .relaxas{
-    text-align:justify;
-    display: inline-block;
-    max-width: 300px;
-    height: 150px;
+    width: 90%;
+    height: 120px;
     color: #ba172a;
     background-color: black;
-    box-shadow: 0px 0px 10px;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
+    align-items: center;
 }
-.relaxas:hover
-{
-    background-color: rgba(5, 5, 5, 0.863);
+.relaxas:hover{
+    transition: 0.3s;
+    width: 93%;
+    box-shadow: 0px 0px 10px;
     cursor: pointer;
 }
 .titulocardap{
-    margin: 10px 0px 0px 0px;
+    font-size: 1em;
 }
 .rlxdescri{
-    padding: 10px;
+    font-size: 0.9em;
     color: white;
+}
+.precos{
+    font-size: 0.9em;
+    color: #56f019;
 }
 #tfincard{
     font-size: 1.1em;
     padding: 10px;
     margin: 10px;
 }
+#hora{
+    margin-bottom: 20px;
+}
+#linha{
+    margin: 0 auto;
+    width: 50%;
+    border-color: black;
+}
 #tmapa{
-    font-size: 0.5em;
-    margin: 10px 5px 0px 5px;
+    font-size: 0.6em;
+    margin: 20px 5px 0px 5px;
 }
 #rua{
     font-size: 0.5em;
@@ -235,20 +265,57 @@ footer{
 p > a{
     color: rgb(248, 248, 248);
     text-decoration: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#final{
+    height: 200px;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+#contato{
+    margin-bottom: 20px;
 }
 @media (min-width: 800px){
-    #ftham{
-        display: table;
-        width:100%;
-        padding: 100px 0;
-        text-align: center;
-        color: white;
-        background: url(ftham-fundo.jpg);
-        background-position: center center;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-      }
+    header{
+    background-color: #ba172a;
+    margin: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 45px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+#ftlogo{
+    width: 46px;
+}
+#menuham{
+    display: none;
+}
+h1{
+    font-size: 4em;
+}
+#cadastro{
+    display: inline;
+}
+#op > a{
+    display: inline;
+}
+#ftham{
+    display: table;
+    width:100%;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    background: url(ftham-fundo.jpg);
+    background-position: center center;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 #op{
     margin: 30px 0px 0px 0px;
  
@@ -256,52 +323,64 @@ p > a{
 #cadastro{
     margin: 30px 0px 0px 0px;
 }
-    .relaxas{
-        display: inline-block;
-        max-width: 350px;
-        height: 190px;
-        color: #ba172a;
-        background-color: black;
-        box-shadow: 0px 0px 10px;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 5px;
-    }
-    #mapa{ 
-        background-color: #57423F;
-        padding: 5px;
-        position: relative;
-        padding-bottom: 50%;
-        overflow:hidden;
-        height:0;
-        margin-bottom: 5px;
-    }
-    #mapa > iframe {
-        position: absolute;
-        top: 0%;
-        left: 5%;
-        width: 90%;
-        height: 60%;
-    }
-    #rua{
-        margin-bottom: 5px;
-        padding: 10px;
-        border-radius: 5px 5px 0px 0px;
-        display: inline-block;
-        background-color: black;
-        box-shadow: 0px 0px 5px black;
-        color: white;
-        font-size: 1em;
-        width: 88.50%;
-    }
-    #tcardapio, #tvideo, #tfoto{
+.relaxas{
+    display: inline-block;
+    max-width: 350px;
+    height: 190px;
+    color: #ba172a;
+    background-color: black;
+    box-shadow: 0px 0px 10px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.descpreco{
+    display: inline;
+    font-size: 1.2em;
+}
+.titulocardap{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.rlxdescri{
+    margin-bottom: 20px;
+
+}
+#mapa{ 
+    background-color: #57423F;
+    padding: 5px;
+    position: relative;
+    padding-bottom: 50%;
+    overflow:hidden;
+    height:0;
+    margin-bottom: 5px;
+}
+#mapa > iframe {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 90%;
+    height: 60%;
+}
+#rua{
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    display: inline-block;
+    background-color: black;
+    box-shadow: 0px 0px 5px black;
+    color: white;
+    font-size: 1em;
+    width: 88.50%;
+}
+#tcardapio, #tvideo, #tfoto{
         font-size: 2em;
-    }
-    #tmapa{
-        margin: 10px;
-        font-size: 1em;
-    }
-    #trua{
-        font-size: 1em;
-    }
+}
+#tmapa{
+    margin: 10px;
+    font-size: 1em;
+}
+#trua{
+    font-size: 1em;
+}
 }
