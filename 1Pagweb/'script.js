@@ -27,7 +27,6 @@ function carregar(){
     function abrir(){
         x.style.display = 'inline'
         mop.style.display = 'inline'
-        mop.style.transition = '1s'
         m.style.display = 'none'
         
 
@@ -36,7 +35,18 @@ function carregar(){
         m.style.display = 'inline'
         x.style.display = 'none'
         mop.style.display = 'none'
-        mop.style.transition = '1s'
+    }
 
+    let ab = document.querySelector('#modal-abrir')
+    let mo = document.getElementById('modal-none')
+    let xm = document.getElementById('modal-fechar')
 
+    ab.addEventListener('click', clicar)
+    xm.addEventListener('click', fecha)
+
+    function clicar(){
+        mo.style.display = 'inline'
+    }
+    function fecha(){
+        mo.style.display = 'none'
     }

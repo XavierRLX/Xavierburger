@@ -9,7 +9,6 @@
     <title>RLXBURGER</title>
 </head>
 <body onload="carregar()"></body>
-<div id="fixed">
     <header>
         <div id="logop">
 
@@ -70,13 +69,13 @@
                 Escolha o seu RLX BURGER preferido
             </h2>
             <nav id="cxcard">
-                <div class="relaxas">
-                    <h3 class="titulocardap" > RELAXA, TÁ TRANQUILO</h3>
-                    <div class = "descpreco">
-                        <p  class="rlxdescri">Pão, 160g de carne artesanal, muçarela, anéis de cebola empanados e maionese da casa.</p>
-                        <p class="precos">R$: 25,00</p>
-                    </div>
-                </div>
+                        <div id="modal-abrir" class="relaxas">
+                                <h3 class="titulocardap" > RELAXA, TÁ TRANQUILO</h3>
+                                <div class = "descpreco">
+                                    <p  class="rlxdescri">Pão, 160g de carne artesanal, muçarela, anéis de cebola empanados e maionese da casa.</p>
+                                    <p class="precos">R$: 25,00</p>
+                                </div>
+                        </div>
                 <div class="relaxas">
                     <h3 class="titulocardap" > RELAXA E ENGORDA</h3>
                     <div class = "descpreco">
@@ -92,7 +91,8 @@
                             <p class="precos">R$: 25,00</p>
                         </div>
                     </div>
-                </div>                <div class="relaxas">
+                </div>
+                <div class="relaxas">
                     <h3 class="titulocardap" > RELAXA E TOMA</h3>
                     <div class = "descpreco">
                         <p  class="rlxdescri">Pão, 160g de carne artesanal, cheddar fatiado, bacon, cheddar cremoso e maionese da casa. Acompanha fritas com bacon e cheddar.</p>
@@ -173,7 +173,26 @@
     <div>
         <p><a  class="linkfooter" href="https://xavierrlx.github.io/sitesrenan/index" target="_blank">@Renan Xavier</a></p>
     </div>
+    
 </footer>
+
+</div>
+<div id="modal-none">
+    <div id="modal-transparencia">
+        <div id="modal-conteudo">
+            <div id="modal-fechar"><p>x</p></div>
+            <img class="foto-modal" src="foto-hamb1.jpg">
+            <div class="modal-fundo-cnt">
+                <h2 class="modal-hamb">RELAXA, TÁ TRANQUILO</h2>
+                <h3 class="modal-igt">Pão, 160g de carne artesanal, muçarela, anéis de cebola empanados e maionese da casa.</h3>
+                <p class="modal-preco"> Preço: R$ 25,00</p>
+                <p class="modal-obs">Oberservações: </p> 
+                <input type="text" name="tobs" id="tobs"> <br>
+                <div id="modal-adc"><input id="modal-botao" type="button" value="Adicionar: R$ 25,00 reais"></div>
+            </div>
+        </div>
+            
+</div>
 
  <script src="'script.js"></script>
 </body>
