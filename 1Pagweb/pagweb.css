@@ -59,33 +59,85 @@ header{
     margin-left: 2px;
 }
 #menua{
-    display: none;
+    position: absolute;
+   right: 0;
+   top: 0;
+   margin-top: 5px;
+   margin-right: 5px;
+   cursor: pointer;
 }
 #menu{
     display: none ;
 }
+#menuf{
+    cursor: pointer;
+}
+#menu-fundo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.705);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 #menulista{
     display: flex;
     background-color: #ba172a ;
-    flex-wrap: wrap;
     flex-direction: column;
-    position: absolute;
+    justify-content: space-between;
+    position: fixed;
     right: 0px;
-    width: 100%;
+    width: 85%;
     height: 100%;
-    transition-duration: 0.5s;
 }
 #menulista > p {
-    margin: 0px 10px 60px 0px;
-    padding: 5px;
-    text-align: center;    
+    width: 88%;
+    height: 15%;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
 }
-#menulista > p > a{
-    color: black;
+#menulista > a {
+    text-decoration: none;
+    color: #000000;
 }
-#menulista > hr {
-    border-color: black;
-}
+.botaoh {
+    color: #000000 ;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    transition: color 2s ease;
+    transition: transform .2s ease;
+   } 
+   .botaoh::before {
+    content: '';
+    inset: 0 0 0 0;
+    margin: auto;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    background-color: #000000;
+    z-index: -1;
+    transition: all .2s ease;
+   }
+   .botaoh:active {
+    transform: scale(.9);
+   }
+   .botaoh:hover {
+       color: #ec1111;
+   } 
+   .botaoh:hover:before {
+    height: 200px;
+    width: 100%;
+   }
+
 #ftham{
   display: table;
   width:100%;
@@ -290,7 +342,7 @@ footer{
     margin: 0px;
     padding: 0px;
 }
-#modalnone{
+#modal-none{
     display: none;
 }
 #modal-transparencia{
@@ -316,7 +368,7 @@ footer{
 }
 #modal-conteudo{
     position: relative;
-    margin: 1%;
+    margin: 1.5%;
 }
 .foto-modal{
     border-radius: 10px 10px 0px 0px;
@@ -349,10 +401,11 @@ footer{
 .modal-obs{
     font-size: 0.6em;
     padding: 10px;
+    margin: auto;
 }
-#tobs{
-    width: 200px;
-    height: 25px;
+#modal-texto{
+    width: 400px;
+    height: 40px;
 }
 #modal-adc{
     width: 200px;

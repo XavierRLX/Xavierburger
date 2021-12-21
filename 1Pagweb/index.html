@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pagweb.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta name="theme-color" content="#ba172a">
     <title>RLXBURGER</title>
 </head>
 <body onload="carregar()"></body>
@@ -17,13 +18,16 @@
         </div>
         
         <div id="menu">
-            <div id="menulista">
-                <p>Contato</p> 
-                <p>Cardápio</p> 
-                <p>Localização</p> 
-                <p><a href="../Cadastro/index.html">Cadastro</a></p> 
-                <p><a href="../Login/index.html">Login</a></p>
-                <p><a href="../trabconosco/index.html">Trabalhe Conosco</a></p> 
+            <div id="menu-fundo">
+                <div id="menulista">
+                        <img id="menua" width="23px" src="x.png">
+                        <p class="botaoh">Contato</p>
+                        <p class="botaoh">Cardápio</p>
+                        <p class="botaoh">Localização</p>
+                        <p class="botaoh"><a href="../Cadastro/index.html">Cadastro</a></p>
+                        <p class="botaoh"><a href="../Login/index.html">Login</a></p>
+                        <p class="botaoh"><a href="../trabconosco/index.html">Trabalhe Conosco</a></p>
+                                        </div>
             </div>
         </div>
 
@@ -41,8 +45,7 @@
         </div>
 
         <div id="menuham">
-            <img id="menuf" width="28px" src="menu-aberto.png">
-            <img id="menua" width="23px" src="x.png">
+            <img id="menuf" width="28px" src="menu-aberto.png">    
          </div>
     
     </header>
@@ -76,14 +79,14 @@
                                     <p class="precos">R$: 25,00</p>
                                 </div>
                         </div>
-                <div class="relaxas">
+                <div id="modal-abrir2" class="relaxas">
                     <h3 class="titulocardap" > RELAXA E ENGORDA</h3>
                     <div class = "descpreco">
                         <p  class="rlxdescri">Pão, 160g de carne artesanal, cheddar cremoso, cebola caramelizada, cheddar em fatias e maionese da casa.</p>
                         <p class="precos">R$: 25,00</p>
                     </div>
                 </div>
-                <div class="relaxas">
+                <div id="modal-abrir3" class="relaxas">
                     <h3 class="titulocardap" > RELAXA E GOSTA</h3>
                     <div>
                         <div class="descpreco">
@@ -92,35 +95,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="relaxas">
+                <div id="modal-abrir4" class="relaxas">
                     <h3 class="titulocardap" > RELAXA E TOMA</h3>
                     <div class = "descpreco">
                         <p  class="rlxdescri">Pão, 160g de carne artesanal, cheddar fatiado, bacon, cheddar cremoso e maionese da casa. Acompanha fritas com bacon e cheddar.</p>
                         <p class="precos">R$: 28,00</p>
                     </div>
                 </div>
-                <div class="relaxas">
+                <div id="modal-abrir5" class="relaxas">
                     <h3 class="titulocardap" > RELAXA E SENTA</h3>
                     <div class = "descpreco">
                         <p  class="rlxdescri">Pão, 160g de carne artesanal, cheddar cremoso, cebola caramelizada, cheddar em fatias e maionese da casa.</p>
                         <p class="precos">R$: 25,00</p>
                     </div>
                 </div>
-                <div class="relaxas">
+                <div id="modal-abrir6" class="relaxas">
                     <h3 class="titulocardap" > RELAXA E COME</h3>
                     <div class = "descpreco">
                         <p  class="rlxdescri">Pão, duas carnes artesanal de 160g, bacon, muçarela, cebola roxa caramelizada e maionese da casa.</p>
                         <p class="precos">R$: 28,00</p>
                     </div>
                 </div>
-                <div class="relaxas">
+                <div id="modal-abrir7" class="relaxas">
                     <h3 class="titulocardap" > RELAXA E DORME</h3>
                     <div class = "descpreco">
                         <p  class="rlxdescri">Pão, 160g de hambúrguer de frango artesanal, muçarela, batata chips, catupiry e maionese da casa.</p>
                         <p class="precos">R$: 25,00</p>
                     </div>
                 </div>
-                <div class="relaxas">
+                <div id="modal-abrir8" class="relaxas">
                     <h3 class="titulocardap" > RELAXA E GASTA</h3>
                     <div class = "descpreco">
                         <p  class="rlxdescri">Pão, duas carnes artesanal de 160g, bacon, muçarela, anéis de cebola empanado, batata chios catupiry e maionese da casa.</p>
@@ -186,9 +189,11 @@
                 <h2 class="modal-hamb">RELAXA, TÁ TRANQUILO</h2>
                 <h3 class="modal-igt">Pão, 160g de carne artesanal, muçarela, anéis de cebola empanados e maionese da casa.</h3>
                 <p class="modal-preco"> Preço: R$ 25,00</p>
-                <p class="modal-obs">Oberservações: </p> 
-                <input type="text" name="tobs" id="tobs"> <br>
-                <div id="modal-adc"><input id="modal-botao" type="button" value="Adicionar: R$ 25,00 reais"></div>
+                <p class="modal-obs"> Oberservações: </p> 
+                <textarea placeholder="
+                Ex: Sem tomate..." name="" id="modal-texto" cols="60" rows="5"></textarea> <br>
+                <div id="modal-adc">
+                <input id="modal-botao" type="button" value="Adicionar: R$ 25,00 reais"></div>
             </div>
         </div>
             

@@ -38,15 +38,54 @@ function carregar(){
     }
 
     let ab = document.querySelector('#modal-abrir')
+    let ab2 = document.querySelector('#modal-abrir2')
+    let ab3 = document.querySelector('#modal-abrir3')
+    let ab4 = document.querySelector('#modal-abrir4')
+    let ab5 = document.querySelector('#modal-abrir5')
+    let ab6 = document.querySelector('#modal-abrir6')
+    let ab7 = document.querySelector('#modal-abrir7')
+    let ab8 = document.querySelector('#modal-abrir8')
+    let mt = document.querySelector('.modal-hamb')
     let mo = document.getElementById('modal-none')
     let xm = document.getElementById('modal-fechar')
 
-    ab.addEventListener('click', clicar)
+    ab.addEventListener('click', clicar1)
+    ab2.addEventListener('click', clicar2)
+    ab3.addEventListener('click', clicar3)
+    ab4.addEventListener('click', clicar4)
+    ab5.addEventListener('click', clicar5)
+    ab6.addEventListener('click', clicar6)
+    ab7.addEventListener('click', clicar7)
+    ab8.addEventListener('click', clicar8)
     xm.addEventListener('click', fecha)
 
-    function clicar(){
-        mo.style.display = 'inline'
-    }
     function fecha(){
         mo.style.display = 'none'
+        mt.innerHTML = 'RELAXA, TÁ TRANQUILO'
+    }
+    function clicar1(){
+        mo.style.display = 'inline'
+    }
+    function clicar2(){
+        mo.style.display = 'inline'
+        mt.innerHTML = 'RELAXA E ENGORDA'
+    }
+    function clicar3(){
+        mo.style.display = 'inline'
+        mt.innerHTML = 'RELAXA E GOSTA'
+    }
+    function clicar4(){
+        mo.style.display = 'inline'
+    }
+    function clicar5(){
+        mo.style.display = 'inline'
+    }
+    function clicar6(){
+        mo.style.display = 'inline'
+    }
+    function clicar7(){
+        mo.style.display = 'inline'
+    }
+    function clicar8(){
+        mo.style.display = 'inline'
     }
