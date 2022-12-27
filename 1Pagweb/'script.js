@@ -37,6 +37,8 @@ function carregar(){
         mop.style.display = 'none'
     }
 
+    
+
     let ab = document.querySelector('#modal-abrir')
     let ab2 = document.querySelector('#modal-abrir2')
     let ab3 = document.querySelector('#modal-abrir3')
